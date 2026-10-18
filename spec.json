@@ -1,0 +1,51 @@
+{
+    "name":  "gguf-quant",
+    "logo":  "📦",
+    "exe":  "GgufQuant.exe",
+    "desc":  "Free, open-source GUI to quantize and convert LLMs to GGUF on Windows — presets, batch queue, VRAM hints. 100 MB portable, offline, MIT.",
+    "topics":  [
+                   "gguf",
+                   "quantization",
+                   "llm",
+                   "llama-cpp",
+                   "model-converter",
+                   "local-ai",
+                   "ai-tools",
+                   "windows",
+                   "windows-10",
+                   "windows-11",
+                   "csharp",
+                   "dotnet",
+                   "q4-k-m",
+                   "q5-k-m",
+                   "model-compression",
+                   "vram",
+                   "portable",
+                   "open-source",
+                   "mit-license"
+               ],
+    "features":  [
+                     "✅ **One-click quantize** — pick Q4_K_M, Q5_K_M, Q8_0 or any K-quant preset and convert a source model to GGUF",
+                     "✅ **Batch queue** — line up several models and quants; the queue runs overnight with per-job logs",
+                     "✅ **Size and VRAM preview** — estimated file size and required VRAM per quant before a single byte is written",
+                     "✅ **Imatrix support** — optional importance matrix pass for better quality at aggressive quants",
+                     "✅ **Format intake** — reads safetensors and PyTorch checkpoints with a built-in shard merger",
+                     "✅ **Real progress** — tensor-level progress bars from the llama.cpp backend, not a fake spinner",
+                     "✅ **100 MB self-contained exe** — runtime and conversion tools bundled, portable, offline, MIT with SHA-256 releases"
+                 ],
+    "compare":  [
+                    "| Feature | **gguf-quant** | llama-quantize CLI | LM Studio | HF converters |",
+                    "|---|:---:|:---:|:---:|:---:|",
+                    "| Price | **Free, MIT** | Free, OSS | Free | Free |",
+                    "| Open source | **Yes** | Yes | No | Partial |",
+                    "| GUI with quant presets | **Yes** | No | Partial | No |",
+                    "| Batch queue with logs | **Yes** | Scripted | No | No |",
+                    "| VRAM estimate per quant | **Yes** | No | No | No |",
+                    "| Portable, no install | **Yes, 100 MB** | Build from source | Installer | Web or script |"
+                ],
+    "faqQ":  "how to quantize a model to GGUF on Windows?",
+    "faqA":  "The reference path is a Python environment plus a llama.cpp build, which loses an evening for anyone outside the ML shell. gguf-quant wraps the same backend in presets with size and VRAM estimates, so you choose a quant and watch tensor-level progress. It is a 100 MB portable exe, MIT, fully offline.",
+    "s1":  "Dark workbench (#121417, cyan #22D3EE): source model card left, quant preset list center with size estimates, VRAM hint chip reading 8.2 GB at 8k context.",
+    "s2":  "Batch queue view: three models with per-quant output sizes, progress bars running in parallel, log tail showing tensor names converting.",
+    "s3":  "Settings: threads slider, imatrix file picker, output folder with shard naming pattern, success toast reading Q4_K_M written 4.1 GB."
+}
